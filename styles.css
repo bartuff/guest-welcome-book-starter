@@ -186,10 +186,36 @@ article p,
   line-height: 1.5;
 }
 
+.article-hero {
+  padding: 76px 0 46px;
+}
+
+.article-hero h1 {
+  max-width: 920px;
+}
+
+.resource-stack {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 54px 0 78px;
+  border-top: 2px solid rgba(21, 34, 56, 0.14);
+}
+
+.resource-stack article {
+  display: grid;
+  gap: 12px;
+}
+
+.resource-stack article strong {
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .hero,
   .note,
-  .grid {
+  .grid,
+  .resource-stack {
     grid-template-columns: 1fr;
   }
 
